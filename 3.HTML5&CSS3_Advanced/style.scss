@@ -23,7 +23,7 @@ body {
 header.grid {
    min-height: $size-width+vh;
    background-size: cover;
-   background-image: url(/img/header.jpg);
+   background-image: url(img/header.jpg);
    position: relative;
    background-position: $position;
    align-content: $position;
@@ -350,6 +350,152 @@ header.grid {
       span {
          font-size: $size-main*2;
          letter-spacing: $size-main/10;
+      }
+   }
+}
+
+@media screen and (max-width: 992px) {
+   header.grid .header {
+      &-container h1 {
+         font-size: $size-main*15;
+      }
+      &-btns {
+         text-align: $position;
+         .btn {
+            display: block;
+            margin: $size-main*5 auto;
+            padding: $size-main*3 $size-main*20;
+            font-size: $size-main*4;
+         }
+      }
+   }
+
+   .section-about .container {
+      grid-template-columns: 1fr;
+      >div {
+         padding: 3%;
+         &.about-left {
+            border: $size-zero;
+            h2 {
+               text-align: $position;
+               font-size: $size-main*4;
+               margin-bottom: $size-main;
+            }
+         }
+         &.about-right {
+            padding: $size-width/33+% $size-width/20+%;
+            .img-responsive {
+               width: $size-width/1.6+%;
+               margin: $size-zero auto;
+            }
+         }
+      }
+   }
+
+   .form-section {
+      form {
+         grid-template-columns: 1fr;
+         grid-gap: $size-main*3;
+         div {
+            input {
+               width: $size-width+%;
+               padding: $size-main*3 $size-zero;
+               font-size: $size-main*3;
+               text-indent: $size-main*2;
+            }
+            &:last-of-type {
+               text-align: center;
+               .btn {
+                  margin: $size-zero;
+                  font-size: $size-main*4;
+                  width: $size-width/2+%;
+               }
+            }
+         }
+      }
+   }
+
+   .photo {
+      &-section {
+         grid-template-columns: repeat(2,1fr);
+      }
+      &-item {
+         min-height: $size-width/3+vh;
+         font-size: $size-main*5;
+         &:nth {
+            &-child(1) {
+               grid-column: 1;
+            }
+            &-child(4) {
+               grid-column: 2;
+            }
+            &-child(5) {
+               grid-column: 1;
+               grid-row: 3;
+            }
+            &-child(8) {
+               grid-column: 2;
+               grid-row: 4;
+            }
+         }
+      }
+   }
+
+   .section-blog .container h1 {
+      font-size: 3em;
+   }
+
+   .blog {
+      &-main {
+         grid-template-columns: repeat(2,1fr);
+         .btn-blog {
+            grid-column: 1/3;
+            align-content {
+               margin: $size-main*3;
+               font-size: $size-main*4;
+               width: $size-width*6;
+            }
+         }
+      }
+      &-item:nth {
+         &-child(3) {
+            grid-column: 1/3;
+            grid-row: 2;
+         }
+         &-child(4) {
+            grid-column: 1/3;
+            grid-row: 3;
+         }
+      }
+      &-item {
+         grid-template-rows: none;
+         &-content {
+            height: $size-main*8;
+            margin: $size-main;
+            padding: $size-main;
+            h4 {
+               font-size: $size-main*4;
+            }
+            p {
+               display: none;
+            }
+         }
+      }
+      .frame {
+         height: $size-width*4+px;
+      }
+      .footer {
+         &-img img {
+            width: $size-main*6;
+            height: $size-main*6;
+            margin: 3em 2em;
+         }
+         &-text span {
+            font-size: $size-main*8;
+            span {
+               font-size: $size-main*5;
+            }
+         }
       }
    }
 }
