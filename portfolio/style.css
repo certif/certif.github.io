@@ -1,0 +1,78 @@
+.container,
+main {
+  margin: 5px auto;
+  max-width: 1024px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+h1, h3, strong {
+  font-weight: 600;
+}
+
+.divider {
+  background-image: url(https://certif.github.io/1.HTML5&CSS3_Starter/img/divider-pattern.png);
+  background-repeat: repeat-x;
+  margin-top: 10px;
+  height: 10px;
+  width: 100%;
+}
+
+.highlight {
+  background-color: #f8f8f8;
+}
+
+.photo {
+  display: flex;
+  align-items: center;
+}
+
+.contact {
+  margin-left: 20px;
+}
+
+img {
+  width: 150px;
+}
+
+pre {
+  padding: 16px;
+  font-size: 85%;
+}
+
+code {
+  font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+}
+
+a {
+  text-decoration: none;
+  color: #0366d6;
+}
+
+a:hover {
+  color: #00058a;
+}
+
+.iblock {
+  display: flex;
+}
+
+.cbold {
+  font-weight: bold;
+}
+
+.cazure {
+  color: #009999;
+}
+
+.cred {
+  color: #d14;
+}
+
+.cgrey {
+  color: #999988;
+  font-style: italic;
+}
+
