@@ -1,7 +1,7 @@
 const educationTitle = document.querySelector(".education-title-container");
 const educationList = document.querySelector(".education-list");
 const educationControl = document.querySelector(".education-control");
-let el = document.querySelector(".slider");
+const el = document.querySelector(".slider");
 
 educationTitle.addEventListener("click", () => {
   educationList.classList.toggle("hidden");
@@ -103,7 +103,6 @@ const swipeDetect = (el) => {
     }
   });
 
-
   surface.addEventListener("touchstart", function (e) {
     if (e.target.classList.contains("arrow")) {
       console.log("e.target.classList.contains( arrow )");
@@ -157,3 +156,4 @@ const swipeDetect = (el) => {
 swipeDetect(el);
 
 // END of swiper by Shalyapin
+// Webinar 17.10.2019 Swiper & Slider Examples https://youtu.be/rkz6LURkbBw

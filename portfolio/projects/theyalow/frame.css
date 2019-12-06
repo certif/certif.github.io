@@ -53,8 +53,12 @@
   border-radius: 2px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 650px) {
   .frame {
     width: 100%;
   }
+  .button-switch {
+    display: none;
+  }
+
 }
