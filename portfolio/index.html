@@ -31,24 +31,25 @@
       <div class="divider"></div>
   </header>
   <main>
+
     <section class="education">
-      <div class="education_container">
-        <div class="education_title">
-          <h2 class="education_title">Education</h2>
-          <span class="education_control"><i class="material-icons">
-              arrow_drop_down
+      <div class="education-container">
+        <div class="education-title-container">
+          <h2 class="education-title">Education</h2>
+          <span class="education-control"><i class="material-icons">
+              expand_more
             </i></span>
         </div>
-        <ul class="education_list hidden">
-          <li class="education_item">
-            <span class="education_item-time">2010 - 2014</span>
-            <span class="education_item-text">completed the full course of Academician Yuriy Bugay International
+        <ul class="education-list hidden">
+          <li class="education-item">
+            <span class="education-item-text">- 2010 - 2014 completed the full course of Academician Yuriy Bugay
+              International
               Scientific and Technical University having <strong>specialized</strong> in <strong>"Software
                 Engineering"</strong></span>
           </li>
-          <li class="education_item">
-            <span class="education_item-time">2019Q3</span>
-            <span class="education_item-t">RSSchool Courses</span>
+          <li class="education-item">
+            <span class="education-item-text">- 2019Q3 RSSchool <strong>Javascript</strong> /
+              <strong>Frontend</strong></span>
           </li>
         </ul>
       </div>
@@ -57,52 +58,58 @@
     <div class="divider"></div>
 
     <section class="projects">
-      <h2 class="projects_title">Projects</h2>
+      <h2 class="projects-title">Projects</h2>
       <div class="slider">
-        <button class="arrow arrow-prev" type="button">&lt;<span class="visually-hidden">Previous slide</span></button>
-        <div class="project-wrap">
+        <button class="arrow arrow-prev" type="button">&lt;<span class="visually-hidden">Previous
+            slide</span></button>
+        <div class="project-wrapper">
           <div class="project active">
             <div class="project-container">
               <form class="slider-form" action="#">
-                <div class="project-desc" id="project-desc-repair">
+                <input class="visually-hidden checkbox checkbox-repair" type="checkbox" name="checkbox-repair"
+                  id="checkbox-repair">
+                <label class="project-show project-show-repair" for="checkbox-repair">Show description</label>
+                <div class="project-desc project-desc-repair" id="project-desc-repair">
                   <a class="project-title" href="./projects/repair-design-project/index.html">Repair-desigh-project</a>
                   <ul class="project-list">
                     <li>HTML5/CSS3</li>
-                    <li>Responsive/adaptive</li>
+                    <li>Responsive / adaptive</li>
                     <li>Flexbox, Grid</li>
                     <li>Adaptive images</li>
-                    <li>JS</li>
                   </ul>
+                  <button class="project-tap">Tap to see the project &gt;</button>
                 </div>
               </form>
-              <a href="./projects/repair-design-project/index.html" class="project__link">
-                <img class="project__img" src="./assets/rdp.JPG" alt="repair-design-project">
+              <a href="./projects/repair-design-project/index.html" class="project-link">
+                <img class="project-img" src="./assets/rdp.JPG" alt="repair-design-project">
               </a>
-              <p class="project__tap">Tap to see the project</p>
             </div>
           </div>
           <div class="project">
-            <div class="project_container">
+            <div class="project-container">
               <form class="slider-form" action="#">
-                <div class="project-desc" id="project-desc-theyallow">
+                <input type="checkbox" class="visually-hidden checkbox checkbox-theyallow" name="checkbox-theyallow"
+                  id="checkbox-theyallow">
+                <label class="project-show project-show-theyallow" for="checkbox-theyallow">Show description</label>
+                <div class="project-desc project-desc-theyallow" id="project-desc-theyallow">
                   <a class="project-title" href="./projects/theyalow/index.html">Theyallow</a>
                   <ul class="project-list">
                     <li>HTML5/CSS3</li>
                     <li>Responsive/adaptive</li>
                     <li>Adaptive images</li>
-                    <li>Flexbox</li>
+                    <li>Flexbox, Grid</li>
                     <li>JS</li>
                   </ul>
+                  <button class="project-tap">Tap to see the project &gt;</button>
                 </div>
               </form>
-              <a href="./projects/theyalow/index.html" class="project__link">
-                <img class="project__img" src="./assets/THEYALOW.jpg" alt="theyallow">
+              <a href="./projects/theyalow/index.html" class="project-link">
+                <img class="project-img" src="./assets/THEYALOW.jpg" alt="theyallow">
               </a>
-              <p class="project__tap">Tap to see the project</p>
             </div>
           </div>
         </div>
-        <button class="arrow arrow__next" type="button">&gt;<span class="visually-hidden">Next slide</span></button>
+        <button class="arrow arrow-next" type="button">&gt;<span class="visually-hidden">Next slide</span></button>
       </div>
     </section>
   </main>
