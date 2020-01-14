@@ -10,3 +10,6 @@ My training project
 #### Codecademy specialty Web Development:
 1. [Responsibilities of Owning A Cat](https://certif.github.io/Responsibilities%20of%20Owning%20A%20Cat/)
 2. [Change Physics!](https://certif.github.io/Change%20Physics!/)
+
+#### RS School JS / Frontend Developer:
+1. [Portfolio](https://certif.github.io/portfolio/)
