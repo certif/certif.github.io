@@ -1,0 +1,35 @@
+{
+  "name": "the-movie-db",
+  "version": "1.0.0",
+  "description": "training project find-the-movie with API service, webpack, eslint, es6",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "webpack-dev-server --open --mode development",
+    "dev": "webpack --mode development",
+    "build": "webpack --progress --mode production",
+    "lint": "eslint ./src/script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://certif.github.io/4.FindTheMovie/"
+  },
+  "keywords": [
+    "API",
+    "webpack",
+    "eslint",
+    "es6",
+    "find-the-movie"
+  ],
+  "author": "Oleksandr Tkachov",
+  "license": "ISC"
+}
