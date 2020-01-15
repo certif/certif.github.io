@@ -1,19 +1,25 @@
 import movie from '../movie';
 
 export default class MovieList {
-  constructor(data) {
-    this.data = data;
-  }
-
   drawToDom(selector) {
-    selector.innerHTML = this.movieList;
+    this.clearList(selector);
+    selector.appendChild(this.fragment);
   }
 
-  renderMovie() {
+  renderMovies(data) {
+    this.data = data;
     this.fragment = document.createDocumentFragment();
 
-    data.forEach(data => {
-      this.fragment.appendChild(movie(data));
+    this.data.results.forEach(data => {
+      const article = document.createElement("article");
+
+      article.classList.add("movie");
+      article.innerHTML = movie(data);
+      this.fragment.appendChild(article);
     });
+  }
+
+  clearList(selector) {
+    selector.innerHTML = "";
   }
 }

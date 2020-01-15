@@ -1,8 +1,22 @@
-.search-title {
+.main-title {
   text-align: center;
 }
 
 .search-block {
   width: 50%;
   margin: auto;
+}
+
+.search-input {
+  width: 100%;
+}
+
+.picture {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
