@@ -55,7 +55,7 @@ export default class MovieList {
         return -1;
       }
     });
-    this.renderMovies(this.data);
+    this.renderMovies(data);
     this.drawToDom(document.querySelector(".movies"));
   }
 
@@ -68,33 +68,33 @@ export default class MovieList {
         return -1;
       }
     });
-    this.renderMovies(this.data);
+    this.renderMovies(data);
     this.drawToDom(document.querySelector(".movies"));
   }
 
   sortByNew(data) {
     data.sort((a, b) => {
-      if (new Date(a.date) > new Date(b.date)) {
+      if (new Date(a.release_date) < new Date(b.release_date)) {
         return 1;
       }
-      if (new Date(a.date) < new Date(b.date)) {
+      if (new Date(a.release_date) > new Date(b.release_date)) {
         return -1;
       }
     });
-    this.renderMovies(this.data);
+    this.renderMovies(data);
     this.drawToDom(document.querySelector(".movies"));
   }
 
   sortByOld(data) {
     data.sort((a, b) => {
-      if (new Date(a.date) > new Date(b.date)) {
+      if (new Date(a.release_date) > new Date(b.release_date)) {
         return 1;
       }
-      if (new Date(a.date) < new Date(b.date)) {
+      if (new Date(a.release_date) < new Date(b.release_date)) {
         return -1;
       }
     });
-    this.renderMovies(this.data);
+    this.renderMovies(data);
     this.drawToDom(document.querySelector(".movies"));
   }
 }

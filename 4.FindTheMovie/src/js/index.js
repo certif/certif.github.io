@@ -34,5 +34,6 @@ filters.addEventListener("click", (e) => {
   if (!dataAttr) {
     return;
   }
+
   list.sort(dataAttr);
 });
