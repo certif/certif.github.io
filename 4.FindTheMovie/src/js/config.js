@@ -6,5 +6,5 @@ export default {
   noImageSrc: "https://upload.wikimedia.org/wikipedia/commons/5/5e/No_image_available_-_museum.svg",
   baseMovieUrl: "https://api.themoviedb.org/3/",
   queryMovieById: "tv/",
-  apiKey: `api_key=${API_KEY}`,
+  apiKey: `?api_key=${API_KEY}`,
 };

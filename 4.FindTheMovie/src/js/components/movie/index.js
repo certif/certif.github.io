@@ -2,6 +2,7 @@ import config from '../../config';
 
 export default function movie(data) {
   const mappingData = mapData(data);
+  
   const html = `
     <a href="${data.id}" class="movie-link">
       <h2 class="movie-title">${mappingData.title}</h2>
@@ -17,8 +18,10 @@ export default function movie(data) {
 }
 
 function mapData(data) {
+  const defaultValue = "Unknown";
+
   return {
-    title: data.title || data.name || "Unknown",
+    title: data.title || data.name || defaultValue,
     date: data.release_date,
     img: getPictureUrl(),
     language: data.original_language,
