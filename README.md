@@ -13,3 +13,6 @@ My training project
 
 #### RS School JS / Frontend Developer:
 1. [Portfolio](https://certif.github.io/portfolio/)
+
+#### Games:
+1. [Flappy Bird](https://certif.github.io/flappy_bird/)
