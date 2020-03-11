@@ -13,6 +13,9 @@ My training project
 
 #### RS School JS / Frontend Developer:
 1. [Portfolio](https://certif.github.io/portfolio/)
+2. [Codejam virtual-keyboard](https://certif.github.io/codejam-virtual-keyboard/)
+3. [Codejam canvas](https://certif.github.io/codejam-canvas/codejam-canvas/)
 
 #### Games:
 1. [Flappy Bird](https://certif.github.io/flappy_bird/)
+2. [Tetris](https://certif.github.io/Tetris/)
