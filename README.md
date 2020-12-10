@@ -1,5 +1,5 @@
-# certif.github.io
-My training project
+# My training project
+
 
 #### ITVDN specialty Frontend Developer:
 1. [HTML5&CSS3_Starter](https://certif.github.io/1.HTML5&CSS3_Starter/)
